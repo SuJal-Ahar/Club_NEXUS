@@ -1,16 +1,88 @@
-# React + Vite
+I can certainly create a comprehensive README file for your **Campus Event and Club Management** project\!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This file will use Markdown and include sections for setup, running the app, project overview, and future plans. I've incorporated the names and technologies we discussed (`Club Nexus`, Vite/React, Neon Buttons, etc.).
 
-Currently, two official plugins are available:
+-----
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🌐 Club Nexus: Campus Event and Club Management
 
-## React Compiler
+## 🌟 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Club Nexus** is a modern, responsive single-page application (SPA) built to streamline the management of student clubs and campus events. The goal is to provide a central, easy-to-use platform for students to discover activities and for club organizers to manage their memberships and event listings.
 
-## Expanding the ESLint configuration
+### Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * **Intuitive UI:** Built with **React** and styled for a sleek, modern aesthetic (including a **Neon Glow** heading and interactive buttons).
+  * **Event Discovery:** A central place for viewing all active campus events.
+  * **Club Management:** Functionality for club leaders to manage their club details and members (future feature).
+  * **Dynamic UX:** Includes background sound on page load (with a **Mute Toggle**) for an enhanced, immersive user experience.
+
+## 🚀 Getting Started
+
+This project was bootstrapped with **Vite** and uses **React** and **JavaScript/JSX**.
+
+### Prerequisites
+
+You must have [Node.js](https://nodejs.org/en) installed on your system.
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone [Your Repository URL Here]
+    cd Campus-Event-and-Club-Management/
+    ```
+
+2.  **Navigate to the frontend directory and install dependencies:**
+    *(Assuming your frontend is in a subdirectory as per the setup)*
+
+    ```bash
+    cd frontend/Campus-Event-and-Club-Management/
+    npm install
+    ```
+
+-----
+
+## ⚙️ Project Structure
+
+The key files and components that create the main page experience are:
+
+| File/Directory | Description |
+| :--- | :--- |
+| `src/App.jsx` | The main application component, including the "Club Nexus" heading and button containers. |
+| `src/App.css` | Styles for the main page layout, neon-glow heading, and button containers. |
+| `src/NeonButton.jsx` | Reusable **React Component** for the glowing, interactive buttons. |
+| `src/NeonButton.css` | CSS defining the **box-shadow** and **text-shadow** for the button neon effect. |
+| `src/useCelebrationSound.js` | Custom **React Hook** for handling the auto-play and mute/unmute state of the background sound. |
+| `public/` | Contains static assets like the `celebrate.mp3` file, favicon, and the `pexels-jossvee-12492086.jpg` background image. |
+
+-----
+
+## ▶️ Available Scripts
+
+In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the app in development mode. Open [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) (or the port shown in your terminal) to view it in the browser. The page will auto-reload as you make edits.
+
+### `npm run build`
+
+Builds the app for production to the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### `npm run preview`
+
+Serves the built production version locally for testing purposes.
+
+-----
+
+## 🤝 Next Steps & Contributions
+
+Future development plans include:
+
+1.  **Routing:** Implement client-side routing (e.g., using React Router) to navigate from the home page to `/events` and `/clubs`.
+2.  **Data Models:** Integrate a database/backend to handle CRUD operations for Events and Clubs.
+3.  **Authentication:** Implement user login/registration (students and organizers).
+
+Feel free to fork the repository and submit pull requests\!
