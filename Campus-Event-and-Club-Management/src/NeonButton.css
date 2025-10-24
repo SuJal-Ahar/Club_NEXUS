@@ -1,0 +1,37 @@
+/* src/NeonButton.css */
+
+.neon-btn {
+  /* Button Base Styling */
+  font-family: inherit;
+  font-size: 1.2em;
+  padding: 10px 25px;
+  border: 3px solid #0ff; /* Border color matches the glow */
+  border-radius: 8px;
+  cursor: pointer;
+  
+  /* Text and Background */
+  background-color: transparent;
+  color: #c0ffff; /* Light color for the text */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+  /* Transition for a smooth hover effect */
+  transition: all 0.3s ease-in-out;
+  
+  /* Neon Text Shadow */
+  text-shadow: 0 0 5px #fff, 0 0 10px #0ff;
+  
+  /* Neon Box Shadow (The main glow) */
+  box-shadow: 
+    0 0 5px #0ff,        /* Inner glow */
+    0 0 20px #0ff,       /* Medium glow */
+    0 0 35px #0ff,       /* Outer glow */
+    0 0 50px #0ff inset; /* Subtle glow inside the button */
+}
+
+/* Optional: Make the button pulse or intensify the glow on hover */
+.neon-btn:hover {
+  color: #000; /* Text goes dark when 'unlit' or is pressed */
+  background-color: #0ff; /* Background lights up */
+  box-shadow: 0 0 5px #0ff, 0 0 20px #0ff; /* Reduce blur for a "solid" look */
+}
