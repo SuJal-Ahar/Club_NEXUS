@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.centered-image {
+  /* Set a maximum width in pixels */
+  max-width: 900px; /* Adjust 900px to your preferred max size */
+  width: 100%;    /* Allows it to shrink on smaller screens */
+  height: auto;
+  display: block;
+
+  /* Centering */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body {
+  margin: 0;
+  
+  /* 1. Set the image path (needs to be the root-relative path, assuming it's in /public) */
+  background-image: url('/pexels-jossvee-12492086.jpg'); 
+  
+  /* 2. Control how the image behaves */
+  background-size: cover;       /* Scales image to cover the entire page */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps the background from scrolling with content */
+  
+  min-height: 100vh; 
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  
+  min-height: 100vh;
+  
+  padding-bottom: 250px;
+  
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+/* src/App.css */
+
+.neon-glow {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 4em;
+  text-align: center;
+  color: #c0ffff; 
+
+  text-shadow:
+    -1px -1px 0px #000, 
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    1px 1px 0px #000,
+    -2px -2px 0px #000, 
+    2px -2px 0px #000,
+    -2px 2px 0px #000,
+    2px 2px 0px #000,
+
+    0 0 8px #fff,
+    
+
+    0 0 15px #0ff,
+    0 0 25px #0ff,
+    0 0 40px #0ff;
+}
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 30px; 
+  margin-top: 50px; 
+}
