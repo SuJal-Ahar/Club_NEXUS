@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+-----
 
-## Project info
+# 🌐 Club Nexus: Campus Event and Club Management
 
-**URL**: https://lovable.dev/projects/b9005bb7-154f-4cd3-a67b-0b60d01882c3
+## 🌟 Project Overview
 
-## How can I edit this code?
+**Club Nexus** is a modern, responsive single-page application (SPA) built to streamline the management of student clubs and campus events. The goal is to provide a central, easy-to-use platform for students to discover activities and for club organizers to manage their memberships and event listings.
 
-There are several ways of editing your application.
+### Features
 
-**Use Lovable**
+  * **Intuitive UI:** Built with **React** and styled for a sleek, modern aesthetic (including a **Neon Glow** heading and interactive buttons).
+  * **Event Discovery:** A central place for viewing all active campus events.
+  * **Club Management:** Functionality for club leaders to manage their club details and members (future feature).
+  * **Dynamic UX:** Includes background sound on page load (with a **Mute Toggle**) for an enhanced, immersive user experience.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b9005bb7-154f-4cd3-a67b-0b60d01882c3) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+This project was bootstrapped with **Vite** and uses **React** and **JavaScript/JSX**.
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+You must have [Node.js](https://nodejs.org/en) installed on your system.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1.  **Clone the repository:**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+    ```bash
+    git clone [Your Repository URL Here]
+    cd Campus-Event-and-Club-Management/
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2.  **Navigate to the frontend directory and install dependencies:**
+    *(Assuming your frontend is in a subdirectory as per the setup)*
 
-# Step 3: Install the necessary dependencies.
-npm i
+    ```bash
+    cd frontend/Campus-Event-and-Club-Management/
+    npm install
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+-----
 
-**Edit a file directly in GitHub**
+## ⚙️ Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The key files and components that create the main page experience are:
 
-**Use GitHub Codespaces**
+| File/Directory | Description |
+| :--- | :--- |
+| `src/App.jsx` | The main application component, including the "Club Nexus" heading and button containers. |
+| `src/App.css` | Styles for the main page layout, neon-glow heading, and button containers. |
+| `src/NeonButton.jsx` | Reusable **React Component** for the glowing, interactive buttons. |
+| `src/NeonButton.css` | CSS defining the **box-shadow** and **text-shadow** for the button neon effect. |
+| `src/useCelebrationSound.js` | Custom **React Hook** for handling the auto-play and mute/unmute state of the background sound. |
+| `public/` | Contains static assets like the `celebrate.mp3` file, favicon, and the `pexels-jossvee-12492086.jpg` background image. |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+-----
 
-## What technologies are used for this project?
+## ▶️ Available Scripts
 
-This project is built with:
+In the project directory, you can run:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### `npm run dev`
 
-## How can I deploy this project?
+Runs the app in development mode. Open [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) (or the port shown in your terminal) to view it in the browser. The page will auto-reload as you make edits.
 
-Simply open [Lovable](https://lovable.dev/projects/b9005bb7-154f-4cd3-a67b-0b60d01882c3) and click on Share -> Publish.
+### `npm run build`
 
-## Can I connect a custom domain to my Lovable project?
+Builds the app for production to the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Yes, you can!
+### `npm run preview`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Serves the built production version locally for testing purposes.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+-----
+
+## 🤝 Next Steps & Contributions
+
+Future development plans include:
+
+1.  **Routing:** Implement client-side routing (e.g., using React Router) to navigate from the home page to `/events` and `/clubs`.
+2.  **Data Models:** Integrate a database/backend to handle CRUD operations for Events and Clubs.
+3.  **Authentication:** Implement user login/registration (students and organizers).
+
+Feel free to fork the repository and submit pull requests\!
